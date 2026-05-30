@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Journey | Age & Motivation Hub</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1>Inner Compass</h1>
+      <p>Your personal space for growth, motivation & tailored insights</p>
+    </header>
+
+    <!-- Main Grid: Form + Dashboard -->
+    <div class="main-grid">
+      <!-- Form Card -->
+      <div class="card form-card">
+        <h2>Your Identity</h2>
+        <form id="userForm">
+          <div class="form-group">
+            <label for="nameInput">Full name</label>
+            <input type="text" id="nameInput" name="name" placeholder="e.g., Maya Chen">
+          </div>
+          <div class="form-group">
+            <label for="ageInput">Age (years)</label>
+            <input type="number" id="ageInput" name="age" min="1" max="120" step="1" placeholder="e.g., 24">
+          </div>
+          <button type="submit">Save & Personalize</button>
+          <div id="formError" class="error-message"></div>
+        </form>
+        <div class="form-note">Data saved locally — your journey continues after refresh</div>
+      </div>
+
+      <!-- Dashboard Cards -->
+      <div class="dashboard">
+        <div class="card greeting-card">
+          <div class="card-label">PERSONAL GREETING</div>
+          <div id="greetingMessage" class="greeting-text">Welcome, explorer</div>
+        </div>
+
+        <div class="card age-card">
+          <div class="card-label">AGE IN MONTHS</div>
+          <div id="ageMonthsDisplay" class="age-months">--</div>
+        </div>
+
+        <div class="card adult-card">
+          <div class="card-label">CONTENT ACCESS</div>
+          <div id="adultContentMessage" class="adult-message">Please submit your age to see eligibility</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Motivational Quote Section (Loop 5 times) -->
+    <section class="quotes-section">
+      <h2>Daily Whisper — 5X Inspiration</h2>
+      <div id="quoteLoopContainer" class="quotes-grid"></div>
+      <p class="quotes-footer">same powerful reminder, five times the impact</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      your data stays in your browser | designed with intention & empathy
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
