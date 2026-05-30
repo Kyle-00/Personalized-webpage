@@ -54,8 +54,8 @@ text
 2. Go to repository **Settings → Pages**.
 3. Under **Branch**, select `main` (or your default branch) and `/ (root)` folder.
 4. Click **Save**.
-5. After a minute, your site will be live at:  
-   `https://<your-username>.github.io/<repository-name>/`
+5. Deploy using vercel and the site will be live at
+        `https://personalized-webpage.vercel.app`
 
 ---
 
